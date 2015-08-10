@@ -14,8 +14,8 @@ var port =3000;
 var ref = new Firebase('https://support-text.firebaseio.com/numbers');
 
 // Twilio Credentials 
-var accountSid = 'ACf242cd64e8df8fad396881db9ef1bbb7'; 
-var authToken = '84969a23483c2550f989750821209a8b'; 
+var accountSid = ''; 
+var authToken = ''; 
 //require the Twilio module and create a REST client 
 var client = require('twilio')(accountSid, authToken); 
 
