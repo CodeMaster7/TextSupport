@@ -6,15 +6,16 @@ var bodyParser = require('body-parser');
 var cors = require('cors');
 var request = require('request');
 var twilio = require('twilio');
-var firebase = require('firebase');
+var Firebase = require('firebase');
 
 var app = express();
 var port =3000;
 
+var ref = new Firebase('https://support-text.firebaseio.com/numbers');
 
 // Twilio Credentials 
-var accountSid = ''; 
-var authToken = ''; 
+var accountSid = 'ACf242cd64e8df8fad396881db9ef1bbb7'; 
+var authToken = '84969a23483c2550f989750821209a8b'; 
 //require the Twilio module and create a REST client 
 var client = require('twilio')(accountSid, authToken); 
 
